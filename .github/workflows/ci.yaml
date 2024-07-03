@@ -186,7 +186,7 @@ jobs:
     - name: Install Snyk CLI
       uses: snyk/actions/setup@master
       with:
-        snyk-token: ${{ secrets.SNYK_TOKEN }}
+        snyk-token:${{ secrets.SNYK_TOKEN }}
        
     - name: Snyk Authenticate    
       run: snyk auth ${{ secrets.SNYK_TOKEN }}
@@ -234,7 +234,7 @@ jobs:
     - name: Install Snyk CLI
       uses: snyk/actions/setup@master
       with:
-        snyk-token: ${{ secrets.SNYK_TOKEN }}
+        snyk-token:${{ secrets.SNYK_TOKEN }}
      
     - name: Snyk Authenticate    
       run: snyk auth ${{ secrets.SNYK_TOKEN }}
